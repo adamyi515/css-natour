@@ -65,6 +65,17 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+
+    /** ANIMATION **/
+    animation-name: moveInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    
+    /**
+    animation-delay: 3s;
+
+    */
+
 }
 
 .heading-primary-sub {
@@ -72,5 +83,42 @@ body {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 15px;
+
+    /** ANIMATION **/
+    animation-name: moveInFromRight;
+    animation-duration: 1s;
 }
 
+/******************************************************************************************************/
+/********** CSS ANIMATION **********/
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInFromRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
