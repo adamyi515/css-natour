@@ -22,6 +22,36 @@ body {
     padding: 30px;
 }
 
+/******************************************************************************************************/
+/********** HELPER/UTILITIES CLASSES **********/
+
+
+/***** BUTTONS *****/
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
 
 
 /******************************************************************************************************/
@@ -53,11 +83,13 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -85,8 +117,9 @@ body {
     letter-spacing: 15px;
 
     /** ANIMATION **/
-    animation-name: moveInFromRight;
-    animation-duration: 1s;
+    animation: moveInFromRight 1s ease-out;
+    /* animation-name: moveInFromRight;
+    animation-duration: 1s; */
 }
 
 /******************************************************************************************************/
